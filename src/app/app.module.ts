@@ -10,8 +10,6 @@ import { HomeComponent } from "./components/home/home.component";
 
 import { AppRoutingModule } from "./app-routing.module";
 
-import { ElectronService } from "./providers/electron.service";
-
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import {
@@ -35,7 +33,6 @@ import { MenuComponent } from "./components/menu/menu.component";
     MdToolbarModule,
     MdIconModule
   ],
-  providers: [ElectronService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
