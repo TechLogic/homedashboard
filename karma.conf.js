@@ -38,7 +38,7 @@ module.exports = function(config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ["Chrome", "ChromeHeadless"],
+    browsers: ["Chrome_Headless"],
     singleRun: true,
     junitReporter: {
       outputDir: "dist/test", // results will be saved as $outputDir/$browserName.xml
@@ -51,7 +51,7 @@ module.exports = function(config) {
       xmlVersion: null // use '1' if reporting to be per SonarQube 6.2 XML format
     },
     customLaunchers: {
-      ChromeHeadless: {
+      Chrome_Headless: {
         base: "Chrome",
         flags: ["--headless", "--disable-gpu"]
       }
