@@ -7,8 +7,8 @@ import { ipcRenderer } from "electron";
 
 @Injectable()
 export class ElectronService {
-  private ipcRenderer: typeof ipcRenderer;
-  private childProcess: typeof childProcess;
+  public ipcRenderer: typeof ipcRenderer;
+  public childProcess: typeof childProcess;
 
   constructor() {
     // Conditional imports
@@ -18,7 +18,7 @@ export class ElectronService {
     }
   }
 
-  private isElectron = () => {
+  public isElectron = () => {
     return window && window.process && window.process.type;
   };
 }
