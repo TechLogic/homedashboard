@@ -37,9 +37,9 @@ module.exports = function(config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: true,
-    browsers: ["Chrome_Headless"],
-    singleRun: true,
+    autoWatch: false,
+    browsers: ["ChromeHeadless"],
+    //singleRun: true,
     junitReporter: {
       outputDir: "dist/test", // results will be saved as $outputDir/$browserName.xml
       outputFile: undefined, // if included, results will be saved as $outputDir/$browserName/$outputFile
@@ -49,12 +49,6 @@ module.exports = function(config) {
       classNameFormatter: undefined, // function (browser, result) to customize the classname attribute in xml testcase element
       properties: {}, // key value pair of properties to add to the <properties> section of the report
       xmlVersion: null // use '1' if reporting to be per SonarQube 6.2 XML format
-    },
-    customLaunchers: {
-      Chrome_Headless: {
-        base: "Chrome",
-        flags: ["--headless", "--disable-gpu"]
-      }
     }
   });
 };
