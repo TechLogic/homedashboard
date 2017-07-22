@@ -3,11 +3,11 @@ import { MdButtonModule, MdSidenavModule } from "@angular/material";
 
 @Component({
   selector: "menu",
-  templateUrl: "./menu.component.html",
-  styleUrls: ["./menu.component.scss"]
+  styleUrls: ["./menu.component.scss"],
+  templateUrl: "./menu.component.html"
 })
 export class MenuComponent implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  public ngOnInit() {}
 }
