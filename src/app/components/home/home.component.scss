@@ -1,19 +1,15 @@
-.grid-wrapper {
-  background-color: green;
+.header {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto, 400px);
-  grid-template-rows: repeat(auto, 400px);
+  width: 100%;
+  height: 64px;
+  margin: 0px;
 }
 
-.grid-container {
-  background: red;
+.dashboard {
+  width: 100%;
+  height: calc(100% - 64px);
 }
 
-.c1 {
-  grid-column: 1 / 3;
-  grid-row: 1;
+.sidenav {
+  width: 250px;
 }
