@@ -1,17 +1,19 @@
-.container {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.grid-wrapper {
+  background-color: green;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto, 400px);
+  grid-template-rows: repeat(auto, 400px);
+}
 
-  background: url(../../../assets/background.jpg) no-repeat center fixed;
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+.grid-container {
+  background: red;
+}
 
-  .title {
-    color: white;
-    margin:0;
-    padding:50px 20px;
-  }
-
+.c1 {
+  grid-column: 1 / 3;
+  grid-row: 1;
 }

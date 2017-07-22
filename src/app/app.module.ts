@@ -1,29 +1,33 @@
-import 'zone.js';
-import 'reflect-metadata';
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import "zone.js";
+import "reflect-metadata";
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { HttpModule } from "@angular/http";
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
+import { AppComponent } from "./app.component";
+import { HomeComponent } from "./components/home/home.component";
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from "./app-routing.module";
 
-import { ElectronService } from './providers/electron.service';
+import { ElectronService } from "./providers/electron.service";
+
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
+import { MdButtonModule, MdSidenavModule } from "@angular/material";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent
-  ],
+  declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MdButtonModule,
+    MdSidenavModule
   ],
   providers: [ElectronService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
