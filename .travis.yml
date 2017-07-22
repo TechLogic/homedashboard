@@ -2,12 +2,8 @@ language: node_js
 node_js:
   - "7"
   - "6"
-addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
+aaddons:
+  chrome: stable
 install:
   - npm install
 script:
