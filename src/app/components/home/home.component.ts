@@ -8,9 +8,9 @@ import { MdButtonModule, MdCheckboxModule } from "@angular/material";
   templateUrl: "./home.component.html"
 })
 export class HomeComponent implements OnInit {
-  title = `App works !`;
+  private title = `App works !`;
 
   constructor() {}
 
-  ngOnInit() {}
+  public ngOnInit() {}
 }
