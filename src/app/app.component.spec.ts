@@ -7,7 +7,6 @@ describe("AppComponent", () => {
     async(() => {
       TestBed.configureTestingModule({
         declarations: [AppComponent],
-        providers: [ElectronService],
         imports: [RouterTestingModule]
       }).compileComponents();
     })
