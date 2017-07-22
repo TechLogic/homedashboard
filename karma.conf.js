@@ -39,7 +39,7 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
     autoWatch: false,
     browsers: ["ChromeHeadless"],
-    //singleRun: true,
+    singleRun: true,
     junitReporter: {
       outputDir: "dist/test", // results will be saved as $outputDir/$browserName.xml
       outputFile: undefined, // if included, results will be saved as $outputDir/$browserName/$outputFile
