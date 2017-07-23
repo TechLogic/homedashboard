@@ -19,9 +19,16 @@ import {
   MdIconModule
 } from "@angular/material";
 import { MenuComponent } from "./components/menu/menu.component";
+import { DashboardComponent } from "./dashboard/dashboard.component";
+import { SettingsService } from "./providers/settings.service";
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, MenuComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    MenuComponent,
+    DashboardComponent
+  ],
   imports: [
     BrowserModule,
     FormsModule,
@@ -33,6 +40,7 @@ import { MenuComponent } from "./components/menu/menu.component";
     MdToolbarModule,
     MdIconModule
   ],
+  providers: [SettingsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
